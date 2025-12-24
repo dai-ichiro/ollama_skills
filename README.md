@@ -1,8 +1,10 @@
-# langgraph-test
+# Ollama-Skills
 
 このプロジェクトは、以下の環境で動作確認をしています。
 
-- Ubuntu 24.04以上
+```
+Ubuntu 24.04以上
+```
 
 ## 前提条件
 
@@ -16,13 +18,19 @@ sudo apt install poppler-utils
 
 ### 1. リポジトリのクローン
 
+```bash
+git clone https://github.com/dai-ichiro/ollama_skills
+cd ollama_skills
+```
+
+### 2. Skillsの導入
 Agent Skillsを使用するために、以下のリポジトリをクローンする必要があります。
 
 ```bash
 git clone https://github.com/anthropics/skills
 ```
 
-### 2. 環境構築 (Python)
+### 3. 環境構築 (Python)
 
 このプロジェクトはパッケージ管理に `uv` を使用しています。
 
@@ -36,7 +44,7 @@ git clone https://github.com/anthropics/skills
    uv sync
    ```
 
-### 3. LLMのセットアップ
+### 4. LLMのセットアップ
 
 このアプリケーションは [Ollama](https://ollama.com/) を使用してローカルLLMを実行します。
 ※ **Ollama 0.13.1以上** が必要です。

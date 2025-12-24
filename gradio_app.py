@@ -10,7 +10,13 @@ print("🔧 スキルをロード中...")
 
 # スキルローダーを初期化
 loader = SkillLoader(skills_base_dir="./skills/skills")
-skills = loader.load_skills(["pdf"])
+skills = loader.load_skills([
+    "pdf",
+    # 必要に応じて他のスキルも追加可能
+    # "docx",
+    # "pptx",
+    # "xlsx",
+])
 
 # ツールを集約
 all_tools = []

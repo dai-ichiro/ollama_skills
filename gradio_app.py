@@ -91,7 +91,7 @@ with gr.Blocks(title="LangGraph Agent") as demo:
             gr.Markdown("### サンプル")
             gr.Examples(
                 examples=[
-                    ["/home/hoge/langgraph-test/chapter_1.pdfをPNG画像に変換して"],
+                    ["/home/hoge/ollama_skills/chapter_1.pdfをPNG画像に変換して"],
                     ["PDFの処理方法を教えて"],
                     ["利用可能なツールを教えて"],
                 ],
